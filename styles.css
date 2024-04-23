@@ -1,0 +1,118 @@
+body{
+    --bs-body-font-size:18px;
+}
+@media(max-width:768px){
+#Navbar-Content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: hsl(0,0%,41%);
+    flex-wrap: wrap;
+    
+}
+}
+.nav-link {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.navbar-nav{
+    align-items: flex-start;
+    margin-right: .5rem;
+    padding: 1rem;
+}
+button{
+    flex-wrap: nowrap;
+}
+.offcanvas.offcanvas-end{
+    --bs-offcanvas-width: 70%;
+}
+#Btn2{
+    padding: 8px
+
+    
+}
+ul#NavBtns{
+    display: flex;
+}
+#NavBtns{
+    align-items: center;
+    font-size: 18px;
+    /* color: hsl(0,0%,41%); */
+    justify-content: center;
+    align-self: center;
+}
+.navbar-nav.btn{
+    --bs-btn-color:hsl(0,0%,41%);
+}
+
+@media (max-width:768px){
+    #NavBtns{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: stretch;
+        align-self: stretch;
+        text-align:end;
+
+    }
+    button{
+        --bs-btn-padding-y: 5rem;
+        --bs-btn-padding-x: 5rem;
+    }
+    .navbar-nav.btn{
+        text-align: center;
+    }
+
+}
+
+#Nav-Items.dropdown-menu.dropdown-menu-sm-end.show{
+    display: inline-block;
+    flex-direction: column;
+}
+
+.navbar-nav.btn{
+        --bs-btn-padding-y:var(1rem);
+        --bs-btn-padding-x:var(1rem);
+        --bs-btn-font-size:var(18px);
+        --bs-btn-color:var(hsl(0,0%,41%));
+    }
+.navbar-nav.btn.btn-outline-dark{
+        --bs-btn-border-color:var(hsl(0,0%,41%));
+        --bs-btn-padding-y:var(1rem);
+        --bs-btn-padding-x:var(1rem);
+        --bs-btn-font-size:var(18px);
+        --bs-btn-color:var(hsl(0,0%,41%));
+}
+@media (min-width: 1024px) {
+    #NavBtns{
+        grid-area: sidebar;
+        margin-left: 45%;
+    }
+    
+    .navbar-nav{
+        grid-area: main;
+        margin-left: .5rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .navbar-nav.d-flex{
+        display: flex;
+        align-self: flex-end;
+    }
+    #NavBar-Content{
+        display: flex;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 50px 50px 50px;
+        grid-template-areas: 
+        "main main . sidebar";
+        
+    }
+
+    
+}
+

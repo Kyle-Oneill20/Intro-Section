@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.72.0"
+  },
+  "name": "intro-section-with-dropdown-navigation-main",
+  "description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
