@@ -1,7 +1,11 @@
 body{
     --bs-body-font-size:18px;
 }
+.navbar-brand{
+    margin-left: 2rem;
+}
 @media(max-width:768px){
+    
 #Navbar-Content{
     display: flex;
     justify-content: center;
@@ -12,6 +16,89 @@ body{
     flex-wrap: wrap;
     
 }
+#Btn2,#Btn1{
+    padding-left: 75px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+}
+/*app body css*/
+#desktop{
+    display: none;
+}
+#mobile{
+    max-width: 100%;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+#remote{
+    text-align: center;
+    font-weight: 700;
+    flex-grow: 5;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+#content{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0,0%,41%);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#learn{
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-bottom: 1.5rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+
+    flex-grow: 4;
+    border-radius: 1rem;
+    --bs-btn-font-size:18px;
+    --bs-btn-color:hsl(0,0%,98%);
+    --bs-btn-font-weight:500;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#client-img{
+    display: flex;
+    max-width: 65%;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.clientimg{
+    max-width: 30%;
+    height: 55%;
+    margin: 0.6rem;
+}
+/* end */
+#NavBtns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    text-align:end;
+
+}
+button{
+    --bs-btn-padding-y: 5rem;
+    --bs-btn-padding-x: 5rem;
+}
+.navbar-nav.btn{
+    text-align: center;
+}
+}
+.navbar-toggler{
+    --bs-border-width:0px;
 }
 .nav-link {
     display: flex !important;
@@ -23,6 +110,10 @@ body{
     align-items: flex-start;
     margin-right: .5rem;
     padding: 1rem;
+    border: none;
+}
+#Nav-Items1,#Nav-Items2{
+    --bs-dropdown-border-color:none;
 }
 button{
     flex-wrap: nowrap;
@@ -30,11 +121,7 @@ button{
 .offcanvas.offcanvas-end{
     --bs-offcanvas-width: 70%;
 }
-#Btn2{
-    padding: 8px
 
-    
-}
 ul#NavBtns{
     display: flex;
 }
@@ -49,70 +136,62 @@ ul#NavBtns{
     --bs-btn-color:hsl(0,0%,41%);
 }
 
-@media (max-width:768px){
-    #NavBtns{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: stretch;
-        align-items: stretch;
-        align-self: stretch;
-        text-align:end;
-
-    }
-    button{
-        --bs-btn-padding-y: 5rem;
-        --bs-btn-padding-x: 5rem;
-    }
-    .navbar-nav.btn{
-        text-align: center;
-    }
-
-}
-
 #Nav-Items.dropdown-menu.dropdown-menu-sm-end.show{
     display: inline-block;
     flex-direction: column;
 }
 
 .navbar-nav.btn{
-        --bs-btn-padding-y:var(1rem);
-        --bs-btn-padding-x:var(1rem);
-        --bs-btn-font-size:var(18px);
-        --bs-btn-color:var(hsl(0,0%,41%));
+        --bs-btn-padding-y:1rem;
+        --bs-btn-padding-x:1rem;
+        --bs-btn-font-size:18px;
+        --bs-btn-color:hsl(0,0%,41%);
+        --bs-btn-active-color:hsl(0,0%,8%);
+        --bs-btn-active-bg:transparent;
+        --bs-btn-hover-bg:transparent
     }
 .navbar-nav.btn.btn-outline-dark{
-        --bs-btn-border-color:var(hsl(0,0%,41%));
-        --bs-btn-padding-y:var(1rem);
-        --bs-btn-padding-x:var(1rem);
-        --bs-btn-font-size:var(18px);
-        --bs-btn-color:var(hsl(0,0%,41%));
+        --bs-btn-border-color:hsl(0,0%,41%);
+        --bs-btn-padding-y:10px;
+        --bs-btn-padding-x:50px;
+        padding-left: 50px;
+        
+        --bs-btn-font-size:18px;
+        --bs-btn-color:hsl(0,0%,41%);
+        
+        --bs-btn-hover-color:hsl(0, 0%, 8%);
+       --bs-btn-active-color:hsl(0,0%,8%);
+        
+        --bs-btn-hover-bg:transparent;
+        --bs-btn-active-bg:hsl(0,0%,98%);
 }
 @media (min-width: 1024px) {
     #NavBtns{
-        grid-area: sidebar;
-        margin-left: 45%;
+        
+        margin-left: 30%;
     }
     
     .navbar-nav{
-        grid-area: main;
+        
         margin-left: .5rem;
         align-items: center;
         justify-content: space-evenly;
     }
     .navbar-nav.d-flex{
         display: flex;
-        align-self: flex-end;
     }
     #NavBar-Content{
         display: flex;
-        grid-template-columns: auto;
-        grid-template-rows: 50px 50px 50px 50px;
-        grid-template-areas: 
-        "main main . sidebar";
+        
         
     }
 
-    
+    #mobile{
+        display: none;
+    }
 }
 
+#main{
+    display: grid;
+    
+}
