@@ -1,5 +1,6 @@
 body{
     --bs-body-font-size:18px;
+    color:hsl(0,0%,98%);
 }
 .navbar-brand{
     margin-left: 2rem;
@@ -97,6 +98,9 @@ button{
     text-align: center;
 }
 }
+
+
+
 .navbar-toggler{
     --bs-border-width:0px;
 }
@@ -109,7 +113,7 @@ button{
 .navbar-nav{
     align-items: flex-start;
     margin-right: .5rem;
-    padding: 1rem;
+    //padding: 20px;
     border: none;
 }
 #Nav-Items1,#Nav-Items2{
@@ -165,14 +169,13 @@ ul#NavBtns{
         --bs-btn-hover-bg:transparent;
         --bs-btn-active-bg:hsl(0,0%,98%);
 }
+    
 @media (min-width: 1024px) {
     #NavBtns{
-        
-        margin-left: 30%;
+        margin-left: 50%;
     }
     
     .navbar-nav{
-        
         margin-left: .5rem;
         align-items: center;
         justify-content: space-evenly;
@@ -189,9 +192,52 @@ ul#NavBtns{
     #mobile{
         display: none;
     }
+    #main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
 }
 
-#main{
-    display: grid;
+#desktop{
+    padding-top:10px;
+    max-width:80%;
+}
+
+#remote{
+    font-weight:700;
+    font-size:90px;
+    padding-top:10px;
+}
+#content{
+    align-self:flex-start;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-weight:500;
+    color:hsl(0, 0%, 41%);
+    font-size:18px;
+}
+#one{
+    margin:65px;
+    display:flex;
+    flex-direction:column;
     
 }
+
+#learn{
+align-self:center;
+--bs-btn-padding-y:10px;
+--bs-btn-padding-x:15px;
+--bs-btn-font-size:18px;
+--bs-btn-color:hsl(0,0%,98%);
+--bs-btn-font-weight:500;
+}
+#client-img{
+    padding:10px;
+    padding-top:5rem;
+    display:flex;
+    justify-content:space-evenly;
+    align-content:center;
+    align-items:center;
+}
+}
+
