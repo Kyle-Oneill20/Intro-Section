@@ -204,6 +204,7 @@ ul#NavBtns{
 }
 
 #remote{
+    align-self:flex-start;
     font-weight:700;
     font-size:90px;
     padding-top:10px;
